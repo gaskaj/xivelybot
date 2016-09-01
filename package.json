@@ -1,0 +1,32 @@
+{
+  "name": "xivelybot",
+  "version": "1.0.0",
+  "description": "This is a Bot used to insert intelligence for a onencted product demo utilizing Xively, Salesforce, Wave Analytics, and Xively Product Simulator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaskaj/xivelybot.git"
+  },
+  "keywords": [
+    "Xively",
+    "Bot",
+    "AI",
+    "Demonstration"
+  ],
+  "author": "Joe Gaska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaskaj/xivelybot/issues"
+  },
+  "homepage": "https://github.com/gaskaj/xivelybot#readme",
+  "dependencies": {
+    "botkit": "^0.2.0",
+    "botkit-sms": "1.0.7",
+    "dotenv": "^2.0.0",
+    "express": "4.14.0",
+    "jsforce": "1.7.0"
+  }
+}
