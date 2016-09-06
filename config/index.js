@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const config = {
     logger: {
         level: process.env.LOG_LEVEL || (process.env.NODE_ENV === 'development' ? 'debug' : 'info')
@@ -16,7 +15,6 @@ const config = {
             ipmessaging:{
                 ipm_service_sid: process.env.TWILIO_IPM_SERVICE_SID
             }
-
         }
     }
 };

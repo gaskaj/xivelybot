@@ -5,7 +5,9 @@ Message interaction with a sample UI provided below for testing.  You can direct
 using (19788177116).
 
 ## Bot Testing UI
-http://xivelybotui.herokuapp.com/
+http://xivelybotui.herokuapp.com/ First time you hit this might take a moment to spin up the Dynos.  First message
+to the bot will also take a moment as it spins its dyno up.  After the first refresh of each you should expect
+sub-second response time.
 
 ## Bot Deployed
 http://xivelybot.herokuapp.com/
