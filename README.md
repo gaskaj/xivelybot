@@ -4,14 +4,19 @@ This is an automated bot demo using Xively, Twilio, Heroku, and Salesforce.  The
 Message interaction with a sample UI provided below for testing.  You can directly interact with the bot via SMS
 using (19788177116).
 
-### Bot Testing UI
+## Bot Testing UI
 http://xivelybotui.herokuapp.com/
 
-### Bot Deployed
+## Bot Deployed
 http://xivelybot.herokuapp.com/
 
-### Sample Commands
+## Sample Commands
 
+### Simple Interactions
+Hi, Hello - Greeting sample
+Who am I, What is my name - Personalization Demonstration
+
+### SFDC Sample Interactions
 \#(Any SFDC Object Name) - This will return the Total number of (Any SFDC Object Name) in Salesforce. Example #Account
 \Y#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last year. Example Y#Account
 \Q#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last quarter. Example Q#Account
