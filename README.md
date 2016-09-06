@@ -12,6 +12,8 @@ http://xivelybot.herokuapp.com/
 
 ### Sample Commands
 
-\#Account
-\#Case
-\#Lead
+#Account
+
+#Case
+
+#Lead
