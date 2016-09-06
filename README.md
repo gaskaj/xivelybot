@@ -12,8 +12,8 @@ http://xivelybot.herokuapp.com/
 
 ### Sample Commands
 
-#Account
+\"#Account" - This will return the Total number of Accounts in Salesforce
 
-#Case
+\#Case - This will return the Total number of Cases in Salesforce
 
-#Lead
+\#Lead - This will return the Total number of Leads in Salesforce
