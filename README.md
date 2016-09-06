@@ -12,8 +12,7 @@ http://xivelybot.herokuapp.com/
 
 ### Sample Commands
 
-\"#Account" - This will return the Total number of Accounts in Salesforce
-
-\#Case - This will return the Total number of Cases in Salesforce
-
-\#Lead - This will return the Total number of Leads in Salesforce
+\#(Any SFDC Object Name) - This will return the Total number of (Any SFDC Object Name) in Salesforce. Example #Account
+\Y#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last year. Example Y#Account
+\Q#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last quarter. Example Q#Account
+\W#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last week. Example W#Account
