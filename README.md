@@ -19,6 +19,9 @@ Who am I, What is my name - Personalization Demonstration
 
 ### SFDC Sample Interactions
 \#(Any SFDC Object Name) - This will return the Total number of (Any SFDC Object Name) in Salesforce.
+
 \Y#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last year.
+
 \Q#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last quarter.
+
 \W#(Any SFDC Object Name) - This will return number of (Any SFDC Object Name) created in last week.
