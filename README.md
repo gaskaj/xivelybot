@@ -13,9 +13,9 @@ http://xivelybot.herokuapp.com/
 ## Sample Commands
 
 ### Simple Interactions
-Hi, Hello - Greeting sample
+"Hi", "Hello" - Greeting sample
 
-Who am I, What is my name - Personalization Demonstration
+"Who am I", "What is my name" - Personalization Demonstration
 
 ### SFDC Sample Interactions
 \#(Any SFDC Object Name) - This will return the Total number of (Any SFDC Object Name) in Salesforce.
