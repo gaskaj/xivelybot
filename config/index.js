@@ -22,6 +22,9 @@ const config = {
                 ipm_service_sid: process.env.TWILIO_IPM_SERVICE_SID
             }
         }
+    },
+    freightfarms:{
+        url: process.env.FREIGHTFARMS_URL
     }
 };
 

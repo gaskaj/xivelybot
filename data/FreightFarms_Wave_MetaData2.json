@@ -1,0 +1,108 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsEnclosedBy": "\"",
+    "fieldsDelimitedBy": ",",
+    "numberOfLinesToIgnore": 1
+  },
+  "objects": [
+    {
+      "connector": "XivelyCSVConnector",
+      "description": "Xively Connector For: FreightFarmsData",
+      "fullyQualifiedName": "FreightFarmsData",
+      "label": "Freight Farms Data",
+      "name": "FreightFarmsData",
+      "fields": [
+        {
+          "description": "Airtemp",
+          "fullyQualifiedName": "FreightFarmsData.Airtemp",
+          "label": "Airtemp",
+          "name": "Airtemp",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "0.00"
+        },
+        {
+          "description": "Humidity",
+          "fullyQualifiedName": "FreightFarmsData.Humidity",
+          "label": "Humidity",
+          "name": "Humidity",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "0.00"
+        },
+        {
+          "description": "CO2",
+          "fullyQualifiedName": "FreightFarmsData.CO2",
+          "label": "CO2",
+          "name": "CO2",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "0.00"
+        },
+        {
+          "description": "Water PH",
+          "fullyQualifiedName": "FreightFarmsData.WaterPH",
+          "label": "Water PH",
+          "name": "WaterPH",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "0.00"
+        },
+        {
+          "description": "Water EC",
+          "fullyQualifiedName": "FreightFarmsData.WaterEC",
+          "label": "Water EC",
+          "name": "WaterEC",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "0.00"
+        },
+        {
+          "description": "Water Temp",
+          "fullyQualifiedName": "FreightFarmsData.WaterTemp",
+          "label": "Water Temp",
+          "name": "WaterTemp",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "0.00"
+        },
+        {
+          "description": "createdAt",
+          "fullyQualifiedName": "FreightFarmsData.createdAt",
+          "label": "Created At",
+          "name": "createdAt",
+          "isSystemField": false,
+          "isUniqueId": false,
+          "type": "Date",
+          "format": "yyyy-MM-dd HH:mm:ss.SSS ",
+          "fiscalMonthOffset": 0
+        }
+      ]
+    }
+  ]
+}

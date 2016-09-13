@@ -6,10 +6,10 @@ var express             = require('express');
 var os                  = require('os');
 
 const config            = require('../../config');
-var Businessoperations  = require('../../lib/xivelyoperations');
+
+var Salesforce  = require('../../lib/salesforce');
 
 var app;
-var businessops;
 var controller;
 var bot;
 var smscontroller;
@@ -19,8 +19,8 @@ module.exports = class XivelyDeviceBot {
 
     constructor(){
         app     = express();
-        businessops = new Businessoperations();
-        businessops.connect();
+        Salesforce = new Salesforce();
+        Salesforce.connect();
         this.initialize();
     }
 
@@ -125,21 +125,21 @@ module.exports = class XivelyDeviceBot {
     setupsfdcevents(){
 
         var getlatestdate = function(bot, message){
-            businessops.getmaxcreateddate(message.text.toString().split("@")[1], function(err,res){
+            Salesforce.getmaxcreateddate(message.text.toString().split("@")[1], function(err,res){
                 bot.reply(message,'Most Recent ' + message.text.toString().split("@")[1] + ' Created: ' + res);
             });
         };
         this.SetBotCall(['@'],'message_received', getlatestdate);
 
         var getbyliteralyear = function(bot, message){
-            businessops.getcountcreatedbyliteral(message.text.toString().split("Y#")[1], "THIS_YEAR", function(err,res){
+            Salesforce.getcountcreatedbyliteral(message.text.toString().split("Y#")[1], "THIS_YEAR", function(err,res){
                 bot.reply(message, message.text.toString().split("Y#")[1] + '\'s Created This Year: ' + res);
             });
         };
         this.SetBotCall(['Y#'],'message_received', getbyliteralyear);
 
         var getbyliteralweek = function(bot, message){
-            businessops.getcountcreatedbyliteral(message.text.toString().split("Q#")[1], "THIS_QUARTER", function(err,res){
+            Salesforce.getcountcreatedbyliteral(message.text.toString().split("Q#")[1], "THIS_QUARTER", function(err,res){
                 bot.reply(message, message.text.toString().split("Q#")[1] + '\'s Created This Quarter: ' + res);
             });
         };
@@ -147,21 +147,21 @@ module.exports = class XivelyDeviceBot {
 
 
         var getbyliteralweek = function(bot, message){
-            businessops.getcountcreatedbyliteral(message.text.toString().split("M#")[1], "THIS_MONTH", function(err,res){
+            Salesforce.getcountcreatedbyliteral(message.text.toString().split("M#")[1], "THIS_MONTH", function(err,res){
                 bot.reply(message, message.text.toString().split("M#")[1] + '\'s Created This Month: ' + res);
             });
         };
         this.SetBotCall(['M#'],'message_received', getbyliteralweek);
 
         var getbyliteralweek = function(bot, message){
-            businessops.getcountcreatedbyliteral(message.text.toString().split("W#")[1], "THIS_WEEK", function(err,res){
+            Salesforce.getcountcreatedbyliteral(message.text.toString().split("W#")[1], "THIS_WEEK", function(err,res){
                 bot.reply(message, message.text.toString().split("W#")[1] + '\'s Created This Week: ' + res);
             });
         };
         this.SetBotCall(['W#'],'message_received', getbyliteralweek);
 
         var getobjectcount = function(bot, message){
-            businessops.getobjectcount(message.text.toString().split("#")[1], function(err,res){
+            Salesforce.getobjectcount(message.text.toString().split("#")[1], function(err,res){
                 bot.reply(message,'Total ' + message.text.toString().split("#")[1] + ': ' + res);
             });
         };

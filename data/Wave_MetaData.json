@@ -1,0 +1,53 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsEnclosedBy": "\"",
+    "fieldsDelimitedBy": ",",
+    "numberOfLinesToIgnore": 1
+  },
+  "objects": [
+    {
+      "connector": "AcmeCSVConnector",
+      "description": "",
+      "fullyQualifiedName": "SalesData",
+      "label": "Sales Data",
+      "name": "SalesData",
+      "fields": [
+        {
+          "description": "",
+          "fullyQualifiedName": "SalesData.Name",
+          "label": "Account Name",
+          "name": "Name",
+          "isSystemField": false,
+          "isUniqueId": false,
+          "isMultiValue": false,
+          "type": "Text"
+        },
+        {
+          "description": "",
+          "fullyQualifiedName": "SalesData.Amount",
+          "label": "Opportunity Amount",
+          "name": "Amount",
+          "isSystemField": false,
+          "defaultValue": "0",
+          "isUniqueId": false,
+          "type": "Numeric",
+          "precision": 10,
+          "scale": 2,
+          "format": "$#,##0.00"
+        },
+        {
+          "description": "",
+          "fullyQualifiedName": "SalesData.CloseDate",
+          "label": "Opportunity Close Date",
+          "name": "CloseDate",
+          "isSystemField": false,
+          "isUniqueId": false,
+          "type": "Date",
+          "format": "yyyy-MM-ddTHH:mm:ss.SSSZ",
+          "fiscalMonthOffset": 0
+        }
+      ]
+    }
+  ]
+}
