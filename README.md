@@ -5,20 +5,9 @@ Message interaction with a sample UI provided below for testing.  You can direct
 using (19788177116).
 
 ## Environment Variables
-Please configure a .env file with the below settings or set the environment variables within Heroku.  This is used for
-interaction with the Bot over the UI (IP) or via SMS.  If you have any questions please email JoeGaska@Gmail.com or
-ubmit an issue wihtin Github.
-
-TWILIO_ACCOUNT_SID=
-TWILIO_API_KEY=
-TWILIO_API_SECRET=
-TWILIO_AUTH_TOKEN=
-TWILIO_IPM_SERVICE_SID=
-TWILIO_NUMBER=
-SALESFORCE_USER=
-SALESFORCE_TOKEN=
-SALESFORCE_PASSWORD=
-SALESFORCE_URL=
+Please configure a .env file with the below settings or set the environment variables within Heroku (Sample included).
+This is used forinteraction with the Bot over the UI (IP) or via SMS.  If you have any questions please email
+JoeGaska@Gmail.com or Submit an issue wihtin Github.
 
 ## Bot Testing UI
 http://xivelybotui.herokuapp.com/ First time you hit this might take a moment to spin up the Dynos.  First message
