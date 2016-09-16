@@ -101,6 +101,16 @@
           "type": "Date",
           "format": "yyyy-MM-dd HH:mm:ss.SSS ",
           "fiscalMonthOffset": 0
+        },
+        {
+          "description": "InstallationID",
+          "fullyQualifiedName": "FreightFarmsData.InstallationID",
+          "label": "InstallationID",
+          "name": "InstallationID",
+          "isSystemField": false,
+          "isUniqueId": false,
+          "isMultiValue": false,
+          "type": "Text"
         }
       ]
     }
